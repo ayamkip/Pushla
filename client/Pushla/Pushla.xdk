@@ -5,9 +5,9 @@
       "type": "App Designer",
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "appDesigner",
-      "projectGuid": "b8a874a8-eb7c-499c-8455-9b75590ef0cf",
-      "lastModifiedDate": 1416057318249,
-      "creationDate": 1416057318195
+      "projectGuid": "8a324075-a066-45ad-9795-cd79e9902a04",
+      "lastModifiedDate": 1416063817296,
+      "creationDate": 1416063817246
     },
     "XDK-app-designer": "true",
     "sourceDirectory": "www",

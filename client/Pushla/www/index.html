@@ -5,9 +5,8 @@
   -->
 
     <head>
-        <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-min.css">
         <title>Blank App Designer Project Template</title>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
@@ -57,166 +56,195 @@
         <script src="xdk/init-dev.js"></script>
         <!-- normalizes device and document ready events, see file for details -->
         <script type="application/javascript" src="lib/jquery.min.js"></script>
-        <script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
     </head>
 
     <body>
         <!-- IMPORTANT: Do not include your weinre script tag as part of your release builds! -->
         <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
         <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
-        <div class="upage" id="mainpage" data-role="page">
-            <div class="upage-outer">
-                <div data-role="header" class="container-group inner-element uib_w_6" data-uib="jquery_mobile/header" data-ver="0">
-                    <h1>Pushla</h1>
-                    <div class="widget-container wrapping-col single-centered"></div>
-                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
-                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
-                </div>
-                <div class="upage-content content-area vertical-col" id="page_40_34">
-                    <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
-                        <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
-                            <div class="widget-container content-area vertical-col center">
+        <div class="upage vertical-col left" id="mainpage">
+            <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+                <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+                    <div class="widget-container content-area center-h-v-col">
 
-                                <div class="table-thing with-label widget uib_w_2 d-margins" data-uib="jquery_mobile/input" data-ver="0">
-                                    <label class="narrow-control"></label>
-                                    <input class="wide-control" placeholder="Insert Your Phone Number" type="number">
-                                </div><span class="uib_shim"></span>
-                            </div>
-                        </div>
-                        <span class="uib_shim"></span>
-                    </div>
-
-                    <div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
-                        <div class="col uib_col_2 col-0_12-12" data-uib="layout/col" data-ver="0">
-                            <div class="widget-container content-area vertical-col">
-
-                                <div class="uib-grid widget uib_w_3 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
-                                    <div class="uib-grid-row">
-                                        <div class="uib-grid-cell widget-container">
-                                            <div class="uib-sprite-button default-sprite-button hover-sprite-button active-sprite-button sprite-sizing default-text widget uib_w_7 d-margins media-button-text-top" data-uib="media/sprite_button" data-ver="0">
-                                                <div class="uib-sprite">
-                                                    <a></a>
-                                                </div>
-                                                <div class="uib-caption">Telkomsel</div>
-                                            </div>
-                                        </div>
-                                        <div class="uib-grid-cell widget-container">
-                                            <div class="uib-sprite-button default-sprite-button hover-sprite-button active-sprite-button sprite-sizing default-text widget uib_w_8 d-margins media-button-text-top" data-uib="media/sprite_button" data-ver="0">
-                                                <div class="uib-sprite">
-                                                    <a></a>
-                                                </div>
-                                                <div class="uib-caption">Indosat</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uib-grid-row">
-                                        <div class="uib-grid-cell widget-container">
-                                            <div class="uib-sprite-button default-sprite-button hover-sprite-button active-sprite-button sprite-sizing default-text widget uib_w_9 d-margins media-button-text-top" data-uib="media/sprite_button" data-ver="0">
-                                                <div class="uib-sprite">
-                                                    <a></a>
-                                                </div>
-                                                <div class="uib-caption">XL</div>
-                                            </div>
-                                        </div>
-                                        <div class="uib-grid-cell widget-container">
-                                            <div class="uib-sprite-button default-sprite-button hover-sprite-button active-sprite-button sprite-sizing default-text widget uib_w_10 d-margins media-button-text-top" data-uib="media/sprite_button" data-ver="0">
-                                                <div class="uib-sprite">
-                                                    <a></a>
-                                                </div>
-                                                <div class="uib-caption">Tri</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uib-grid-row">
-                                        <div class="uib-grid-cell widget-container">
-                                            <div class="uib-sprite-button default-sprite-button hover-sprite-button active-sprite-button sprite-sizing default-text widget uib_w_11 d-margins media-button-text-top" data-uib="media/sprite_button" data-ver="0">
-                                                <div class="uib-sprite">
-                                                    <a></a>
-                                                </div>
-                                                <div class="uib-caption">Flexi</div>
-                                            </div>
-                                        </div>
-                                        <div class="uib-grid-cell widget-container">
-                                            <div class="uib-sprite-button default-sprite-button hover-sprite-button active-sprite-button sprite-sizing default-text widget uib_w_12 d-margins media-button-text-top" data-uib="media/sprite_button" data-ver="0">
-                                                <div class="uib-sprite">
-                                                    <a></a>
-                                                </div>
-                                                <div class="uib-caption">Axis</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div><span class="uib_shim"></span>
-                            </div>
-                        </div>
-                        <span class="uib_shim"></span>
-                    </div>
-
-                    <div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
-                        <div class="col uib_col_4 col-0_6-12" data-uib="layout/col" data-ver="0">
-                            <div class="widget-container content-area vertical-col center">
-
-                                <a class="widget uib_w_4 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button">Reset</a><span class="uib_shim"></span>
-                            </div>
-                        </div>
-                        <div class="col uib_col_3 col-0_6-12" data-uib="layout/col" data-ver="0">
-                            <div class="widget-container content-area vertical-col">
-
-                                <a class="widget uib_w_5 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button">OK</a><span class="uib_shim"></span>
-                            </div>
-                        </div>
-                        <span class="uib_shim"></span>
+                        <div class="widget uib_w_1 scale-image d-margins" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/Pushla Logo.png">
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div><span class="uib_shim"></span>
                     </div>
                 </div>
+                <span class="uib_shim"></span>
             </div>
-            <div id="main" class="upage-content vertical-col hidden">
-                <div class="grid grid-pad urow uib_row_4 row-height-4" data-uib="layout/row" data-ver="0">
-                    <div class="col uib_col_5 col-0_12-12" data-uib="layout/col" data-ver="0">
-                        <div class="widget-container content-area vertical-col">
 
-                            <div class="uib-grid widget uib_w_13 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
-                                <div class="uib-grid-row">
-                                    <div class="uib-grid-cell widget-container">
-                                        <a class="widget uib_w_14 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button">10K</a>
-                                    </div>
-                                    <div class="uib-grid-cell widget-container">
-                                        <a class="widget uib_w_15 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button">20K</a>
-                                    </div>
-                                </div>
-                                <div class="uib-grid-row">
-                                    <div class="uib-grid-cell widget-container">
-                                        <a class="widget uib_w_16 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button">50K</a>
-                                    </div>
-                                    <div class="uib-grid-cell widget-container">
-                                        <a class="widget uib_w_17 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button">100K</a>
-                                    </div>
-                                </div>
-                            </div><span class="uib_shim"></span>
-                        </div>
-                    </div>
-                    <span class="uib_shim"></span>
-                </div>
+            <div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
+                <div class="col uib_col_2 col-0_12-12" data-uib="layout/col" data-ver="0">
+                    <div class="widget-container content-area center-h-v-col">
 
-                <div class="grid grid-pad urow uib_row_5 row-height-5" data-uib="layout/row" data-ver="0">
-                    <div class="col uib_col_7 col-0_6-12" data-uib="layout/col" data-ver="0">
-                        <div class="widget-container content-area vertical-col">
-                            <span class="uib_shim"></span>
-                        </div>
+                        <button class="btn widget uib_w_2 d-margins btn-lg btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1">Log in</button><span class="uib_shim"></span>
                     </div>
-                    <div class="col uib_col_6 col-0_6-12" data-uib="layout/col" data-ver="0">
-                        <div class="widget-container content-area vertical-col">
-                            <span class="uib_shim"></span>
-                        </div>
-                    </div>
-                    <span class="uib_shim"></span>
                 </div>
+                <span class="uib_shim"></span>
+            </div>
+
+            <div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
+                <div class="col uib_col_3 col-0_12-12" data-uib="layout/col" data-ver="0">
+                    <div class="widget-container content-area center-h-v-col">
+
+                        <button class="btn widget uib_w_3 d-margins btn-lg btn-info" data-uib="twitter%20bootstrap/button" data-ver="1">Make an account</button><span class="uib_shim"></span>
+                    </div>
+                </div>
+                <span class="uib_shim"></span>
+            </div>
+
+            <div class="grid grid-pad urow uib_row_4 row-height-4" data-uib="layout/row" data-ver="0">
+                <div class="col uib_col_4 col-0_12-12" data-uib="layout/col" data-ver="0">
+                    <div class="widget-container content-area center-h-v-col">
+
+                        <div class="widget uib_w_4 d-margins" data-uib="media/text" data-ver="0">
+                            <div class="widget-container left-receptacle"></div>
+                            <div class="widget-container right-receptacle"></div>
+                            <div>
+                                <p>How it works?</p>
+                            </div>
+                        </div><span class="uib_shim"></span>
+                    </div>
+                </div>
+                <span class="uib_shim"></span>
             </div>
         </div>
-        <div data-role="header" class="container-group inner-element uib_w_1" data-uib="jquery_mobile/header" data-ver="0">
-            <h1>Pushla</h1>
-            <div class="widget-container wrapping-col single-centered"></div>
-            <div class="widget-container content-area horiz-area wrapping-col left"></div>
-            <div class="widget-container content-area horiz-area wrapping-col right"></div>
+        <div class="upage vertical-col left hidden" id="Login">
+            <div class="grid grid-pad urow uib_row_5 row-height-5" data-uib="layout/row" data-ver="0">
+                <div class="col uib_col_5 col-0_12-12" data-uib="layout/col" data-ver="0">
+                    <div class="widget-container content-area center-h-v-col">
+
+                        <div class="widget uib_w_5 scale-image d-margins" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/Pushla Logo.png">
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div><span class="uib_shim"></span>
+                    </div>
+                </div>
+                <span class="uib_shim"></span>
+            </div>
+
+            <div class="grid grid-pad urow uib_row_7 row-height-7" data-uib="layout/row" data-ver="0">
+                <div class="col uib_col_7 col-0_12-12" data-uib="layout/col" data-ver="0">
+                    <div class="widget-container content-area vertical-col left">
+
+                        <div class="table-thing widget uib_w_6 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                            <label class="narrow-control" for="email"></label>
+                            <input class="wide-control form-control default" type="email" placeholder="email" id="email">
+                        </div>
+                        <div class="table-thing widget uib_w_7 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                            <label class="narrow-control"></label>
+                            <input class="wide-control form-control default" type="password" placeholder="password">
+                        </div><span class="uib_shim"></span>
+                    </div>
+                </div>
+                <span class="uib_shim"></span>
+            </div>
+
+            <div class="grid grid-pad urow uib_row_9 row-height-9" data-uib="layout/row" data-ver="0">
+                <div class="col uib_col_9 col-0_12-12" data-uib="layout/col" data-ver="0">
+                    <div class="widget-container content-area vertical-col">
+
+                        <button class="btn widget uib_w_8 d-margins btn-lg btn-primary" data-uib="twitter%20bootstrap/button" data-ver="1">Sign in</button><span class="uib_shim"></span>
+                    </div>
+                </div>
+                <span class="uib_shim"></span>
+            </div>
+        </div>
+        <div class="upage vertical-col left hidden" id="Register">
+            <div class="grid grid-pad urow uib_row_10 row-height-10" data-uib="layout/row" data-ver="0">
+
+                <div class="col uib_col_10 col-0" data-uib="layout/col" data-ver="0">
+                    <div class="widget-container content-area center-h-v-col">
+
+                        <div class="widget uib_w_9 scale-image d-margins" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/Pushla Logo.png">
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div><span class="uib_shim"></span>
+                    </div>
+                </div>
+                <span class="uib_shim"></span>
+            </div>
+
+            <div class="grid grid-pad urow uib_row_11 row-height-11" data-uib="layout/row" data-ver="0">
+                <div class="col uib_col_11 col-0_12-12" data-uib="layout/col" data-ver="0">
+                    <div class="widget-container content-area vertical-col">
+
+                        <div class="table-thing widget uib_w_10 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                            <label class="narrow-control"></label>
+                            <input class="wide-control form-control default" type="email" placeholder="email">
+                        </div>
+                        <div class="table-thing widget uib_w_11 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                            <label class="narrow-control"></label>
+                            <input class="wide-control form-control default" type="password" placeholder="password">
+                        </div>
+                        <div class="table-thing widget uib_w_12 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                            <label class="narrow-control"></label>
+                            <input class="wide-control form-control default" type="password" placeholder="retype password">
+                        </div>
+                        <div class="table-thing widget uib_w_13 d-margins" data-uib="twitter%20bootstrap/input" data-ver="1">
+                            <label class="narrow-control"></label>
+                            <input class="wide-control form-control default" type="tel" placeholder="phone number">
+                        </div><span class="uib_shim"></span>
+                    </div>
+                </div>
+                <span class="uib_shim"></span>
+            </div>
+
+            <div class="grid grid-pad urow uib_row_12 row-height-12" data-uib="layout/row" data-ver="0">
+                <div class="col uib_col_12 col-0_12-12" data-uib="layout/col" data-ver="0">
+                    <div class="widget-container content-area vertical-col">
+
+                        <button class="btn widget uib_w_14 d-margins btn-lg btn-info" data-uib="twitter%20bootstrap/button" data-ver="1">Make account</button><span class="uib_shim"></span>
+                    </div>
+                </div>
+                <span class="uib_shim"></span>
+            </div>
+        </div>
+        <div class="upage vertical-col left hidden" id="home">
+            <div class="grid grid-pad urow uib_row_13 row-height-13" data-uib="layout/row" data-ver="0">
+                <div class="col uib_col_14 col-0_12-12" data-uib="layout/col" data-ver="0">
+                    <div class="widget-container content-area center-h-v-col">
+
+                        <div class="widget uib_w_15 scale-image d-margins" data-uib="media/img" data-ver="0">
+                            <figure class="figure-align">
+                                <img src="images/Pushla Logo.png">
+                                <figcaption data-position="bottom"></figcaption>
+                            </figure>
+                        </div><span class="uib_shim"></span>
+                    </div>
+                </div>
+                <span class="uib_shim"></span>
+            </div>
+
+            <div class="grid grid-pad urow uib_row_14 row-height-14" data-uib="layout/row" data-ver="0">
+                <div class="col uib_col_15 col-0_12-12" data-uib="layout/col" data-ver="0">
+                    <div class="widget-container content-area vertical-col center">
+
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
+                <span class="uib_shim"></span>
+            </div>
+
+            <div class="grid grid-pad urow uib_row_15 row-height-15" data-uib="layout/row" data-ver="0">
+                <div class="col uib_col_16 col-0_12-12" data-uib="layout/col" data-ver="0">
+                    <div class="widget-container content-area vertical-col">
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
+                <span class="uib_shim"></span>
+            </div>
         </div>
     </body>
 
