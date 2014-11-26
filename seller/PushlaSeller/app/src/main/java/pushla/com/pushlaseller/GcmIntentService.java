@@ -1,19 +1,19 @@
 
 /*
- * Copyright (C) 2013 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+* Copyright (C) 2013 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
 
 package pushla.com.pushlaseller;
 
@@ -30,12 +30,12 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 /**
- * This {@code IntentService} does the actual handling of the GCM message.
- * {@code GcmBroadcastReceiver} (a {@code WakefulBroadcastReceiver}) holds a
- * partial wake lock for this service while the service does its work. When the
- * service is finished, it calls {@code completeWakefulIntent()} to release the
- * wake lock.
- */
+* This {@code IntentService} does the actual handling of the GCM message.
+* {@code GcmBroadcastReceiver} (a {@code WakefulBroadcastReceiver}) holds a
+* partial wake lock for this service while the service does its work. When the
+* service is finished, it calls {@code completeWakefulIntent()} to release the
+* wake lock.
+*/
 public class GcmIntentService extends IntentService {
     public static final int NOTIFICATION_ID = 1;
     private NotificationManager mNotificationManager;
@@ -93,11 +93,12 @@ public class GcmIntentService extends IntentService {
                 this.getSystemService(Context.NOTIFICATION_SERVICE);
 
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0,
-                new Intent(this, DemoActivity.class), 0);
+                new Intent(this, MainActivity.class), 0);
 
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.ic_stat_gcm)
+                        //.setSmallIcon(R.drawable.ic_stat_gcm)
+                        .setSmallIcon(R.drawable.abc_ab_bottom_solid_dark_holo)
                         .setContentTitle("GCM Notification")
                         .setStyle(new NotificationCompat.BigTextStyle()
                                 .bigText(msg))

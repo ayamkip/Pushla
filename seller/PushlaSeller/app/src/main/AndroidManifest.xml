@@ -1,11 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="pushla.com.pushlaseller">
+    package="pushla.com.pushlaseller" >
 
-    <application android:allowBackup="true"
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" >
+    </uses-feature>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Nambah Spesial Permission -->
+    <permission android:name="pushla.com.pushlaseller.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="pushla.com.pushlaseller.permission.C2D_MESSAGE" />
+
+    <application android:allowBackup="true" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="5089000" />
         android:label="@string/app_name"
         android:icon="@drawable/ic_launcher"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
 
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="standard"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
