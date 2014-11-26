@@ -36,6 +36,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver
+            android:name="pushla.com.pushlaseller.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="pushla.com.pushlaseller" />
+            </intent-filter>
+        </receiver>
+        <service android:name="pushla.com.pushlaseller.GcmIntentService" />
     </application>
 
 </manifest>

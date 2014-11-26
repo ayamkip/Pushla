@@ -161,6 +161,7 @@ public class GCMHandler {
 
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
             HttpResponse response = httpClient.execute(httpPost);
+            System.out.println("response : " + response.getStatusLine().toString());
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (ClientProtocolException e) {
